@@ -1,0 +1,66 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPqs/QpojaxwuCWGxKM8Zhd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arshdeepkaur9/LLM-SocialMediaPromoAI/blob/main/requirements.txt\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Requirements"
+      ],
+      "metadata": {
+        "id": "jQCwGQJwJ_Mo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "rjOHOeXNJiXk",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2f01087e-e180-47f8-e3c1-9170f0ab3fe2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Writing requirements.txt\n"
+          ]
+        }
+      ],
+      "source": [
+        "%%writefile requirements.txt\n",
+        "streamlit\n",
+        "openai\n",
+        "langchain\n",
+        "pandas"
+      ]
+    }
+  ]
+}
