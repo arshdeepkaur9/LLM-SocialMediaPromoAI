@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPqs/QpojaxwuCWGxKM8Zhd",
+      "authorship_tag": "ABX9TyOQroIGvM8NG0X0c+9eVPLU",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -27,39 +27,19 @@
       ]
     },
     {
-      "cell_type": "markdown",
-      "source": [
-        "# Requirements"
-      ],
-      "metadata": {
-        "id": "jQCwGQJwJ_Mo"
-      }
-    },
-    {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": 4,
       "metadata": {
-        "id": "rjOHOeXNJiXk",
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "outputId": "2f01087e-e180-47f8-e3c1-9170f0ab3fe2"
+        "id": "rjOHOeXNJiXk"
       },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Writing requirements.txt\n"
-          ]
-        }
-      ],
+      "outputs": [],
       "source": [
-        "%%writefile requirements.txt\n",
-        "streamlit\n",
+        "with open('requirements.txt', 'w') as f:\n",
+        "    f.write(\"\"\"streamlit\n",
         "openai\n",
         "langchain\n",
-        "pandas"
+        "pandas\n",
+        "\"\"\")"
       ]
     }
   ]
