@@ -35,15 +35,18 @@ if uploaded_file is not None:
             input_prompt = f"{prompt}\nBased on these inputs: {text_sample}"
             
             try:
-                # Call OpenAI API
-                response = openai.Completion.create(
-                    engine="text-davinci-003",
-                    prompt=input_prompt,
+                # Use ChatCompletion for OpenAI API
+                response = openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo",  # or "gpt-4" if available
+                    messages=[
+                        {"role": "system", "content": "You are a helpful assistant generating promotional content."},
+                        {"role": "user", "content": input_prompt},
+                    ],
                     max_tokens=150,
                     temperature=0.7,
                 )
                 st.subheader("Generated Promotional Content")
-                st.write(response.choices[0].text.strip())
+                st.write(response['choices'][0]['message']['content'].strip())
             except Exception as e:
                 st.error(f"Error: {str(e)}")
         else:
