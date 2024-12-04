@@ -37,7 +37,7 @@ if uploaded_file is not None:
             try:
                 # Use ChatCompletion for OpenAI API
                 response = openai.ChatCompletion.create(
-                    model="gpt-3.5-turbo",  # or "gpt-4" if available
+                    model="gpt-4o-mini",  # or "gpt-4" "gpt-3.5-turbo" if available
                     messages=[
                         {"role": "system", "content": "You are a helpful assistant generating promotional content."},
                         {"role": "user", "content": input_prompt},
