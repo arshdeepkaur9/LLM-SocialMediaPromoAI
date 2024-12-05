@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 import openai
+import os
 
-# Set up OpenAI API key (ensure to add your key securely)
-openai.api_key = st.secrets["openai_api_key"]
+# Set up OpenAI API key (ensure to add your key securely via environment variable)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.title("Social Media Promotion AI")
 st.write("Welcome to the AI-powered promotional content generator!")
@@ -37,7 +38,7 @@ if uploaded_file is not None:
             try:
                 # Use ChatCompletion for OpenAI API
                 response = openai.ChatCompletion.create(
-                    model="gpt-4o-mini",  # or "gpt-4" "gpt-3.5-turbo" if available
+                    model="gpt-4",  # Use "gpt-3.5-turbo" if available
                     messages=[
                         {"role": "system", "content": "You are a helpful assistant generating promotional content."},
                         {"role": "user", "content": input_prompt},
