@@ -1,21 +1,17 @@
 # Set up OpenAI API key
 import os
-
-# Set up OpenAI API key (ensure to add your key securely via environment variable)
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-import dotenv
-dotenv.load_dotenv()
-
 import pandas as pd
 import streamlit as st
-import openai
 import numpy as np
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_openai import ChatOpenAI
 from transformers import pipeline
+import dotenv
+dotenv.load_dotenv()
 
+# Set up OpenAI API key (ensure to add your key securely via environment variable)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
 # Initialize LangChain LLM
