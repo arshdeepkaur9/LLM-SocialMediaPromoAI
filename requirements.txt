@@ -6,3 +6,4 @@ langchain-openai
 langchain-community
 pandas 
 transformers
+torch
