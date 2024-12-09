@@ -1,1 +1,53 @@
-Add a README file.
+Step 1: Environment Setup
+1.	Install Dependencies: Open a terminal and execute the following commands to install the required Python packages:
+    pip install langchain-openai langchain-community streamlit pandas transformers openai
+2.	Set OpenAI API Key:
+    •	Create a .env file in project directory.
+    •	Add your OpenAI API key to the file:
+      OPENAI_API_KEY=your_openai_api_key
+3.	Prepare the Application:
+    •	Save the application's Python script as app.py in your project directory.
+
+Step 2: Running the Application:
+1.	Navigate to the project directory in your terminal.
+2.	Start the Streamlit application:
+    streamlit run app.py
+3.	Wait for Streamlit to launch the app in your default web browser. If it doesn't open automatically, copy and paste the URL provided in the terminal (e.g., http://localhost:8501) into your browser.
+
+Detailed Functionality
+The interface consists of three main functionalities:
+1.	Create Promotional Content Based on Previous Content
+  •	File Upload:
+    	Upload a CSV or Excel file containing your social media data.
+    	Ensure your file includes relevant columns like Likes/Favorites, Views, or Text Content.
+  •	Select Analysis Type:
+    	Engagement Analysis:
+      o	Choose the columns for likes and views.
+      o	Perform engagement analysis to calculate engagement scores.
+    	Sentiment Analysis:
+      o	Select the text content column.
+      o	Perform sentiment analysis to calculate sentiment scores.
+  •	Generate Content:
+    	Choose the type of content to generate:
+      o	Instagram posts.
+      o	Tweets.
+      o	Hashtags.
+      o	Images.
+    	Click the Generate Content button to create new posts or visuals based on the analysis.
+
+2.	Analyze Previous Content
+  •	File Upload:
+    	Upload a CSV or Excel file containing your social media data.
+  •	Select Analysis Type:
+    	Engagement or sentiment analysis.
+  •	View Results:
+    	The app displays the top and bottom 5 posts based on the chosen metric.
+  •	Enhance Low-Performing Posts:
+    	Automatically rewrite posts with low engagement or sentiment scores to improve performance.
+
+3.	Create Promotional Content Based on a New Idea
+  •	Enter your idea in the text box.
+    	Click Generate Content to produce:
+    	Text-based content (captions, tweets, etc.).
+  •	AI-generated images based on your theme.
+
