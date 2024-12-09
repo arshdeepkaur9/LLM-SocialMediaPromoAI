@@ -1,5 +1,6 @@
 # Set up OpenAI API key
 import os
+import openai
 import pandas as pd
 import streamlit as st
 import numpy as np
