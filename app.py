@@ -1,4 +1,3 @@
-%%writefile app.py
 # Set up OpenAI API key
 import os
 
