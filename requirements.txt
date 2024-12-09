@@ -2,3 +2,7 @@ streamlit
 openai
 langchain
 pandas
+langchain-openai
+langchain-community
+pandas 
+transformers
