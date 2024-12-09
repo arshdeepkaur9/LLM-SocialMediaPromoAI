@@ -13,7 +13,7 @@ dotenv.load_dotenv()
 
 # Set up OpenAI API key (ensure to add your key securely via environment variable)
 openai.api_key = st.secrets["OPENAI_API_KEY"]
-openai_api_key = st.secrets('OPENAI_API_KEY')
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # Initialize LangChain LLM
 def get_llm(temperature=0.7, model="gpt-4o-mini"):
